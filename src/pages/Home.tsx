@@ -3,6 +3,7 @@ import { ArrowRight, Check, ChevronRight, MapPin, MoveRight, Play, Sparkles, Tru
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
+import PromoTimer from '../components/PromoTimer'
 import { brands, categoryCards, demoMetrics, products, stores } from '../data/catalog'
 import heroImage from '../../photos/NOXPLODE.jpg'
 import promoImage from '../../photos/demotimer.jpg'
@@ -23,7 +24,7 @@ export default function Home() {
     </section>
     <section className="shell py-16 sm:py-24">
       <div className="relative overflow-hidden rounded-[28px] bg-ink px-6 py-9 text-white sm:px-10 sm:py-12 lg:grid lg:grid-cols-[1.1fr_.9fr] lg:items-center lg:px-16">
-        <div className="relative z-10"><span className="eyebrow text-[#8de7b4]"><Sparkles size={15} />Выгода недели</span><h2 className="font-display max-w-xl text-3xl font-semibold leading-tight tracking-[-.06em] sm:text-4xl">До −25% на продукты для сильного старта</h2><p className="mt-5 max-w-md text-sm leading-6 text-white/65">Собрали предложения, которые хорошо ложатся в тренировочный режим. Только для демонстрации интерфейса.</p><Link to="/sale" className="button-primary mt-7">Смотреть акции <MoveRight size={17} /></Link></div><div className="relative mt-8 min-h-[210px] lg:mt-0"><div className="absolute -right-8 -top-32 h-80 w-80 rounded-full bg-lime/25 blur-3xl" /><img src={promoImage} alt="Песочные часы" className="absolute inset-0 h-full w-full rounded-2xl object-cover opacity-75 mix-blend-screen" /><div className="absolute bottom-4 left-4 rounded-xl border border-white/10 bg-white/10 p-3 backdrop-blur"><div className="text-xs text-white/60">Демо-таймер</div><div className="mt-1 font-display text-lg tracking-[-.07em]">02 : 14 : 37</div></div></div>
+        <div className="relative z-10"><span className="eyebrow text-[#8de7b4]"><Sparkles size={15} />Выгода недели</span><h2 className="font-display max-w-xl text-3xl font-semibold leading-tight tracking-[-.06em] sm:text-4xl">До −25% на продукты для сильного старта</h2><p className="mt-5 max-w-md text-sm leading-6 text-white/65">Собрали предложения, которые хорошо ложатся в тренировочный режим. Только для демонстрации интерфейса.</p><Link to="/sale" className="button-primary mt-7">Смотреть акции <MoveRight size={17} /></Link></div><div className="relative mt-8 min-h-[210px] lg:mt-0"><div className="absolute -right-8 -top-32 h-80 w-80 rounded-full bg-lime/25 blur-3xl" /><img src={promoImage} alt="Песочные часы" className="absolute inset-0 h-full w-full rounded-2xl object-cover opacity-75 mix-blend-screen" /><div className="absolute bottom-4 left-4 rounded-xl border border-white/10 bg-white/10 p-3 backdrop-blur"><div className="text-xs text-white/60">Демо-таймер</div><div className="mt-1 font-display text-lg tracking-[-.07em]"><PromoTimer /></div></div></div>
       </div>
     </section>
     <BrandSection />
