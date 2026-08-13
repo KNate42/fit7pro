@@ -1,13 +1,15 @@
 import type { Category, Product } from '../types'
+import noxplodeImage from '../../photos/NOXPLODE.jpg'
+import snacksImage from '../../photos/snacks.jpg'
 
 const productImages = {
-  whey: 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=900&q=85',
-  shaker: 'https://images.unsplash.com/photo-1598575468023-3e8deae72b73?auto=format&fit=crop&w=900&q=85',
-  capsules: 'https://images.unsplash.com/photo-1550572017-4fcdbb59cc32?auto=format&fit=crop&w=900&q=85',
-  powder: 'https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?auto=format&fit=crop&w=900&q=85',
-  snacks: 'https://images.unsplash.com/photo-1622484211148-8ea9c6f0ee89?auto=format&fit=crop&w=900&q=85',
-  fitness: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85',
-  preworkout: 'https://images.unsplash.com/photo-1623114237610-6cc2d0d5e9c8?auto=format&fit=crop&w=900&q=85',
+  whey: noxplodeImage,
+  shaker: noxplodeImage,
+  capsules: noxplodeImage,
+  powder: noxplodeImage,
+  snacks: snacksImage,
+  fitness: noxplodeImage,
+  preworkout: noxplodeImage,
 }
 
 const copy = {
